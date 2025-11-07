@@ -3,21 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maleta Multisensorial — 3° a 6°</title>
+  <title>Portal Educativo 3°–6° Básico</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="topbar">
-  <h1>Maleta Multisensorial — Sitio Web</h1>
+  <h1>Portal Educativo — 3° a 6° Básico</h1>
   <nav>
     <a href="#" id="homeLink" class="nav-link">Inicio</a>
     <button id="progressBtn" class="ghost">Progreso</button>
   </nav>
 </header>
-<main id="app" class="container"></main>
+
+<main id="app" class="container">
+  <!-- Content rendered by app.js -->
+</main>
+
 <footer class="footer">
-  <small>Página educativa · Lectura · Escritura · Cálculo</small>
+  <small>Hecho para actividades de <strong>Lectura</strong>, <strong>Escritura</strong> y <strong>Cálculo</strong>. Progreso guardado en este dispositivo.</small>
 </footer>
+
+<!-- Dialogs -->
+<dialog id="progressDialog">
+  <h3>Tu progreso</h3>
+  <div id="progressContent"></div>
+  <form method="dialog" class="dialog-actions">
+    <button>OK</button>
+    <button id="resetProgress" class="danger" value="reset">Borrar progreso</button>
+  </form>
+</dialog>
+
+<template id="star-template">
+  <div class="stars" role="radiogroup" aria-label="Encuesta de satisfacción">
+    <button class="star" data-value="1" aria-label="1 estrella" title="1 ★">★</button>
+    <button class="star" data-value="2" aria-label="2 estrellas" title="2 ★">★</button>
+    <button class="star" data-value="3" aria-label="3 estrellas" title="3 ★">★</button>
+    <button class="star" data-value="4" aria-label="4 estrellas" title="4 ★">★</button>
+    <button class="star" data-value="5" aria-label="5 estrellas" title="5 ★">★</button>
+  </div>
+</template>
+
 <script src="app.js"></script>
 </body>
 </html>
