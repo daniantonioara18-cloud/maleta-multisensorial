@@ -1,0 +1,6 @@
+body{background:#0f172a;color:white;font-family:Arial;margin:0;padding:0}
+.container{padding:20px}
+.card{background:#1e293b;padding:15px;border-radius:10px;margin:10px;color:white;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:15px}
+.topbar{background:#1e293b;padding:10px;color:#fff;display:flex;justify-content:space-between}
+.btn{background:#22c55e;color:white;padding:10px;border:none;border-radius:10px;cursor:pointer}
